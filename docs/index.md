@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
+  name: "梓龙同学"
+  text: "Sow nothing, reap nothing"
   tagline: My great project tagline
   actions:
     - theme: brand
