@@ -1,5 +1,5 @@
 docs/.vitepress/dist
 docs/.vitepress/cache
-vitepress-starter
+starter
 node_modules
 pnpm-lock.yaml
