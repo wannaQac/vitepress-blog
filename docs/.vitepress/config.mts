@@ -2,7 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:"/vitepress-blog/",
+  //base:"/vitepress-blog/", // git page 会用到
+  base:"/",  // vercel 会用到
   title: "catalpa blog",
   description: "",
   themeConfig: {
