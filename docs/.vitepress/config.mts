@@ -32,7 +32,8 @@ export default defineConfig({
           items: [
             { text: '引言', link: '/code/basic/' },
             { text: 'Nvm', link: '/code/basic/nodejs' },
-            { text: 'PHP', link: '/code/basic/php' }
+            { text: 'PHP', link: '/code/basic/php' },
+            { text: 'Multipass', link: '/code/basic/multipass' }
           ]
         }
       ],

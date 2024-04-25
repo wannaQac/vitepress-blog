@@ -8,7 +8,7 @@ nvm 是可以帮助我们快速切换 node 版本的工具，安装 nvm 之前�
 ### 2.1 Windows 安装 Nvm
 
 [Nvm github release](https://github.com/coreybutler/nvm-windows/releases)
-![nvm_list](/code/basic/nvm_list.png)
+![nvm_list](/code/basic/nvm/nvm_list.png)
 
 ### 2.2 Linux(以Ubuntu举例) 安装 Nvm
 
