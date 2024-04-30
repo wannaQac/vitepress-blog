@@ -48,3 +48,11 @@ nvm ls-remote
 nvm install 20.12.2
 nvm use 20.12.2
 ```
+
+## 4.Node可能遇到的问题
+### 4.1 系统禁止运行脚本
+::: danger 报错
+无法加载文件 C:\Program Files\nodejs\npm.ps1，因为在此系统上禁止运行脚本。npm.ps1 cannot be loaded
+:::
+
+这个错误是因为系统禁止运行 `PowerShell` 脚本，以管理员身份打开 `PowerShell` 并执行以下命令: `Set-ExecutionPolicy RemoteSigned` ，如果询问是否更改，输入 "Y" 确认即可
