@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },  // docs/index.md
       { text: 'Examples', link: '/markdown-examples' },
-      { text: '代码', items: [ { text: '数据结构与算法', link: '/code/datastruct/'}, {text: 'Vue3前端框架', link: '/code/vue3/'}]}, //表示docs/code/datastruct/index.md
+      { text: '代码', items: [ { text: '数据结构与算法', link: '/code/datastruct/'}, {text: 'Vue3前端框架', link: '/code/vue3/'}, { text: '数据库', link: '/code/database/'} ]}, //表示docs/code/datastruct/index.md
       { text: '基建', items: [ { text: '环境搭建', link: '/code/basic/'} ]}
     ],
 
@@ -26,6 +26,19 @@ export default defineConfig({
           ]
         }
       ],
+      '/code/database/': [
+        {
+          items: [
+            { text: '引言', link: '/code/database/' },
+          ],
+        },
+        {
+          text: 'DuckDB',
+          items: [
+            { text: 'DuckDB配置', link: '/code/database/duckdb' },
+          ]
+        }
+      ],
       '/code/basic/': [
         {
           text: '基础建设',
@@ -33,6 +46,7 @@ export default defineConfig({
             { text: '引言', link: '/code/basic/' },
             { text: 'Nvm', link: '/code/basic/nodejs' },
             { text: 'PHP', link: '/code/basic/php' },
+            { text: 'Ubuntu', link: '/code/basic/ubuntu' },
             { text: 'Multipass', link: '/code/basic/multipass' }
           ]
         }
