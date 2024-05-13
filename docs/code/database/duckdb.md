@@ -26,7 +26,19 @@ USE mysqldb;
 SHOW TABLES;
 ```
 
-## 5.以 PHP 或者其他语言执行
+## 5.提前下好扩展
+[DuckDB扩展下载链接](https://duckdb.org/docs/extensions/working_with_extensions)
+
+下载好了之后存放到某个路径下，以 `mysql` 为例，下载链接可以是 `http://extensions.duckdb.org/v0.10.2/windows_amd64/mysql_scanner.duckdb_extension.gz`，之后便不必使用 `INSTALL mysql`，将 `{mysql_extension_path}` 替换为一个确切的路径
+```bash
+./duckdb
+LOAD {mysql_extension_path};
+ATTACH 'host=localhost user=root password=!Ss12345678 port=3306 database=mysql' AS mysqldb (TYPE MYSQL);
+USE mysqldb;
+SHOW TABLES;
+```
+
+## 6.以 PHP 或者其他语言执行
 
 ```php
 $exec = '/home/songchenxuan/wwwroot/maxmaster/bin/duck/duckdb :memory: < /home/songchenxuan/wwwroot/maxmaster/tmp/duckdb/run.sql 2>&1';
@@ -36,14 +48,17 @@ exec($exec, $output);
 其中 `run.sql` 可以是
 
 ```sql
-INSTALL mysql;
-LOAD mysql;
-ATTACH 'host=127.0.0.1 user=root password=!Ss12345678 port=3306 database=maxmaster' as mysqldb(TYPE MYSQL);
+LOAD {EXTENSIONPATH};
+ATTACH 'host={HOST} user={USER} password={PASSWORD} port={PORT} database={DATABASE}' as mysqldb(TYPE MYSQL);
 USE mysqldb;
-COPY zt_action TO '/home/songchenxuan/wwwroot/maxmaster/tmp/duckdb/zt_action.parquet';
+COPY {TABLE} TO {COPYPATH};
 ```
 
-或许会遇到以下的错误
+命令行中不允许有一些特殊字符，通过从文件中读取可以规避直接运行命令行的这种问题。`mysql` 的扩展先下载再使用也不是不行，只是会可能遇到以下的错误，所以不推荐
+```sql
+INSTALL mysql
+LOAD mysql
+```
 
 ::: danger 报错
 IO Error: Failed to create directory "/var/www/.duckdb/"!
