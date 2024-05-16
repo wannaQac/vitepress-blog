@@ -9,9 +9,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },  // docs/index.md
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: '代码', items: [ { text: '数据结构与算法', link: '/code/datastruct/'}, {text: 'Vue3前端框架', link: '/code/vue3/'}, { text: '数据库', link: '/code/database/'} ]}, //表示docs/code/datastruct/index.md
+      { text: '框架', items: []  },
+      { text: '编程', items: [ { text: 'Vue3', link: '/code/vue3/'}, { text: 'PHP', link: '/code/lang/php/'}, { text: '数据库', link: '/code/database/'}  ]  },
+      { text: '算法', items: [ { text: '数据结构与算法', link: '/code/datastruct/'} ]}, //表示docs/code/datastruct/index.md
       { text: '基建', items: [ { text: '环境搭建', link: '/code/basic/'} ]}
     ],
 
@@ -26,6 +26,28 @@ export default defineConfig({
           ]
         }
       ],
+      '/code/lang/php/': [
+        {
+          items: [
+            { text: '引言', link: '/code/lang/php/' },
+          ],
+        },
+        {
+          text: '时间',
+          items: [
+            { text: '计算运行时间', link: '/code/lang/php/calcruntime' },
+          ]
+        },
+        {
+          text: '遇到的问题',
+          items: [
+            { text: 'Form表单项过多无法处理', link: '/code/lang/php/formitemtomuch' },
+            { text: '上传文件大小限制', link: '/code/lang/php/uploadfilelimit' },
+          ]
+        }
+
+      ],
+
       '/code/database/': [
         {
           items: [

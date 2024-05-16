@@ -42,6 +42,7 @@ SHOW TABLES;
 
 ```php
 $exec = '/home/songchenxuan/wwwroot/maxmaster/bin/duck/duckdb :memory: < /home/songchenxuan/wwwroot/maxmaster/tmp/duckdb/run.sql 2>&1';
+// $exec = "$binPath :memory: \"$sqlContent\" 2>&1";
 exec($exec, $output);
 ```
 
@@ -54,7 +55,7 @@ USE mysqldb;
 COPY {TABLE} TO {COPYPATH};
 ```
 
-命令行中不允许有一些特殊字符，通过从文件中读取可以规避直接运行命令行的这种问题。`mysql` 的扩展先下载再使用也不是不行，只是会可能遇到以下的错误，所以不推荐
+`mysql` 的扩展先下载再使用也不是不行，只是会可能遇到以下的错误，所以不推荐
 ```sql
 INSTALL mysql
 LOAD mysql
