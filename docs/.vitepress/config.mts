@@ -58,6 +58,8 @@ export default defineConfig({
           text: 'DuckDB',
           items: [
             { text: 'DuckDB配置', link: '/code/database/duckdb' },
+            { text: 'DuckDB函数', link: '/code/database/duckdbfunction' },
+            { text: 'MySQL适配DuckDB', link: '/code/database/mysqltoduckdb' },
           ]
         }
       ],
