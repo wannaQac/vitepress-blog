@@ -39,3 +39,10 @@ select curdate();
 -- 正确
 select current_date();
 ```
+
+#### 5.不要使用 IFNULL
+`COALESCE` 函数接受一个参数列表，并返回第一个非 `NULL` 值
+```
+IFNULL(t3.name, '/')
+COALESCE(t3.name, '/')
+```
