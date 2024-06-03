@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "梓龙同学"
+  name: "catalpa blog"
   text: "Sow nothing, reap nothing"
   tagline: My great project tagline
   actions:

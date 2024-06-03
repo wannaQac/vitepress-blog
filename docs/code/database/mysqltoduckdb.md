@@ -46,3 +46,13 @@ select current_date();
 IFNULL(t3.name, '/')
 COALESCE(t3.name, '/')
 ```
+
+#### 6. 强制转换
+`CAST` 并非所有强制转换都是可行的。例如，无法将 `INTEGER` 转换为 `DATE`。当无法成功执行强制转换时，强制转换也可能会引发错误。
+`TRY_CAST` 当首选行为不是抛出错误而是返回一个 `NULL` 值时可以使用。`TRY_CAST` 永远不会抛出错误。
+```mysql
+-- 会报错
+CAST('hello' AS INTEGER)
+-- 不会报错
+TRY_CAST('hello' AS INTEGER)
+```
