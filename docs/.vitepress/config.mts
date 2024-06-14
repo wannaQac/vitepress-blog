@@ -71,6 +71,7 @@ export default defineConfig({
             { text: 'Nvm', link: '/code/basic/nodejs' },
             { text: 'PHP', link: '/code/basic/php' },
             { text: 'Ubuntu', link: '/code/basic/ubuntu' },
+            { text: 'Git', link: '/code/basic/git' },
             { text: 'Multipass', link: '/code/basic/multipass' }
           ]
         }
