@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t}from"./chunks/framework.C-JBMlMO.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"code/database/index.md","filePath":"code/database/index.md"}'),d={name:"code/database/index.md"};function o(n,s,c,r,i,p){return t(),a("div")}const f=e(d,[["render",o]]);export{m as __pageData,f as default};
