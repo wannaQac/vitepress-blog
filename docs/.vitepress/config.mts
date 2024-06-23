@@ -74,7 +74,14 @@ export default defineConfig({
             { text: 'Git', link: '/code/basic/git' },
             { text: 'Multipass', link: '/code/basic/multipass' }
           ]
+        },
+        {
+          text: '服务器',
+          items: [
+            { text: 'bandwagonhost（搬瓦匠）', link: '/code/basic/bandwagonhost' },
+          ]
         }
+
       ],
 
     },
