@@ -8,7 +8,26 @@ git config --add core.filemode false
 # 保存git的用户名和密码
 git config --global credential.helper store
 ```
+## Github 设置 Accesstoken
 
+在 `Settings/Developer Settings` 里找到 `token` 然后生成一个
+![login](/code/basic/git/git_token.jpg)
+
+在使用 `git push` 遭到拒绝时（如下）
+
+```bash
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for <url>
+```
+应当设置 `origin`
+```bash
+# 如果原来的 `url` 是 
+https://github.com/<username>/<project>.git、
+
+git remote add origin https://<token>@github.com/<username>/<project>.git     # 设置 origin url
+git remote set-url origin https://<token>@github.com/<username>/<project>.git # 更换 origin url
+```
 ## 暂存区
 
 ```bash
