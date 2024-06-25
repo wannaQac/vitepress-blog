@@ -22,12 +22,31 @@ fatal: Authentication failed for <url>
 ```
 应当设置 `origin`
 ```bash
-# 如果原来的 `url` 是 
+# 如果原来的 `url` 是
 https://github.com/<username>/<project>.git、
 
 git remote add origin https://<token>@github.com/<username>/<project>.git     # 设置 origin url
 git remote set-url origin https://<token>@github.com/<username>/<project>.git # 更换 origin url
 ```
+## 撤销操作
+### 撤销 git add
+如果你已经执行了 `git add` 命令将文件添加到了暂存区（staging area），但还没有进行提交，可以使用 `git reset` 命令来撤销
+```bash
+# 撤销某个文件的添加操作
+git reset <file>
+# 撤销所有文件的添加操作
+git reset
+```
+### 撤销 git commit
+```bash
+# 撤销 commit，此时需要 commit 才能恢复到未执行命令前的状态
+git reset --soft HEAD^
+# 撤销 commit 和 add，此时需要先 add 再 commit 才能恢复到未执行命令前的状态
+git reset --mixed HEAD^
+# 撤销 commit 和 add，并进行 checkout 操作，这将会丢失所有未提交的更改
+git reset --hard HEAD^
+```
+
 ## 暂存区
 
 ```bash
