@@ -9,8 +9,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '框架', items: []  },
-      { text: '编程', items: [ { text: 'Vue3', link: '/code/vue3/'}, { text: 'PHP', link: '/code/lang/php/'}, { text: '数据库', link: '/code/database/'}  ]  },
+      { text: '框架', items: [ { text: 'Vue3', link: '/code/vue3/'} ]  },
+      { text: '编程', items: [ { text: 'JavaScript', link: '/code/lang/js/'}, { text: 'PHP', link: '/code/lang/php/'}, { text: '数据库', link: '/code/database/'}  ]  },
       { text: '算法', items: [ { text: '数据结构与算法', link: '/code/datastruct/'} ]}, //表示docs/code/datastruct/index.md
       { text: '基建', items: [ { text: '环境搭建', link: '/code/basic/'} ]}
     ],
@@ -45,9 +45,20 @@ export default defineConfig({
             { text: '上传文件大小限制', link: '/code/lang/php/uploadfilelimit' },
           ]
         }
-
       ],
-
+      '/code/lang/js/': [
+        {
+          items: [
+            { text: '引言', link: '/code/lang/js/' },
+          ],
+        },
+        {
+          text: 'Array',
+          items: [
+            { text: 'Instance methods', link: '/code/lang/js/arrayinstancemethod' },
+          ]
+        }
+      ],
       '/code/database/': [
         {
           items: [
