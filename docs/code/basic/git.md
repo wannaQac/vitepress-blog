@@ -47,6 +47,28 @@ git reset --mixed HEAD^
 git reset --hard HEAD^
 ```
 
+## Git pull
+* `git pull` 的默认行为是 `git fetch` + `git merge`
+* `git pull --rebase` 是 `git fetch` + `git rebase`
+* `git fetch` 从远程获取最新版本到本地，不会自动合并分支
+
+## Git rebase
+`git rebase` 用于把一个分支的修改合并到当前分支。
+
+如果在开发中，开发者A修改了 `deploy.sh` 文件后，进行了提交，开发者B没有拉取最新的代码，也修改了 `deploy.sh` 进行了提交，此时提交不允许，因为本地落后远程分支，必须先拉代码才行，报错可能是这样的
+```bash
+Updates were rejected because the remote contains work that you do not have locally
+```
+
+使用 `git pull --rebase` 与远程代码同步并检查冲突，执行后如果有合并冲突，可以使用以下方案解决
+```bash
+# 撤销 rebase， 回到没有执行 git pull --rebase 的状态
+git rebase --abort
+# 引起冲突的 commits 会被丢弃, 例子中B开发者的提交会被丢弃
+git rebase --skip
+# 手动解决冲突之后，用 git add 命令去更新这些内容的索引(index)，执行该命令就可以线性的连接本地分支和远程分支
+git rebase --continue
+```
 ## 暂存区
 
 ```bash
