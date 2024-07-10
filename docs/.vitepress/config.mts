@@ -34,6 +34,23 @@ export default defineConfig({
           ]
         }
       ],
+      '/code/vue3/': [
+        {
+          text: 'Vue3 开始',
+          items: [
+            { text: 'Vue3 新特性', link: '/code/vue3/' },
+            { text: 'Vite Init', link: '/code/vue3/vite' },
+            { text: 'Vue3 Init', link: '/code/vue3/vue3init' },
+            { text: 'Vscode Plug', link: '/code/vue3/vscodeplug' },
+          ]
+        },
+        {
+          text: 'Vue3 语法',
+          items: [
+            { text: '模版语法', link: '/code/vue3/template' },
+          ]
+        },
+      ],
       '/code/lang/php/': [
         {
           items: [
