@@ -1,4 +1,4 @@
-# Vite
+# Vite Init
 [官方网站](https://cn.vitejs.dev/)
 ## 介绍
 类似 `webpack`，是一种新型前端构建工具。

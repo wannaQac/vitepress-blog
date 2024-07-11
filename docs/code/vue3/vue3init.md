@@ -1,4 +1,4 @@
-# Vite
+# Vue3 Init
 
 ## 构建 Vue 项目
 ```bash
