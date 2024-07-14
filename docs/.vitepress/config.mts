@@ -48,6 +48,7 @@ export default defineConfig({
           text: 'Vue3 语法',
           items: [
             { text: '模版语法', link: '/code/vue3/template' },
+            { text: 'Vue 内置指令', link: '/code/vue3/buildinfunction' },
           ]
         },
       ],
