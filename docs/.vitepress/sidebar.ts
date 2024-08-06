@@ -33,6 +33,8 @@ const vue3 = [
         items: [
             { text: '模版语法', link: '/code/vue3/template' },
             { text: 'Vue 内置指令', link: '/code/vue3/buildinfunction' },
+            { text: '虚拟 Dom', link: '/code/vue3/virtualdom' },
+            { text: 'Diff 算法', link: '/code/vue3/diffalgorithm' }
         ]
     },
 ];
