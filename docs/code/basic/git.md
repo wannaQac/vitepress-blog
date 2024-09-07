@@ -1,13 +1,13 @@
 # Git 常用操作
 
 ## Github 初始化仓库后的第一次提交
-在网页端创建好了仓库后，在shell里依次执行
+在网页端创建好了仓库后（暂时先不创建readme），在shell里依次执行
 ```bash
-git init
-git remote add origin https://<token>@github.com/<username>/<reponame>.git
 git add .
-git commit -m 'Init'
-git push --set-upstream origin master
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://<token>@github.com/<username>/<reponame>.git
+git push -u origin main
 ```
 
 ## config 操作
