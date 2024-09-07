@@ -25,7 +25,7 @@ const vue3 = [
             { text: 'Vue3 新特性', link: '/code/vue3/' },
             { text: 'Vite Init', link: '/code/vue3/vite' },
             { text: 'Vue3 Init', link: '/code/vue3/vue3init' },
-            { text: 'Vscode Plug', link: '/code/vue3/vscodeplug' },
+            { text: 'Vscode Setting', link: '/code/vue3/vscodeplug' },
         ]
     },
     {
