@@ -107,6 +107,12 @@ const basic = [
         items: [
             { text: 'bandwagonhost（搬瓦匠）', link: '/code/basic/bandwagonhost' },
         ]
+    },
+    {
+        text: '博客站点',
+        items: [
+            { text: 'astro', link: '/code/basic/astro' },
+        ]
     }
 ];
 
