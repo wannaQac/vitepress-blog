@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.CB-_N9GX.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"code/lang/php/index.md","filePath":"code/lang/php/index.md"}'),n={name:"code/lang/php/index.md"};function o(c,r,d,p,s,i){return a(),t("div")}const m=e(n,[["render",o]]);export{l as __pageData,m as default};
