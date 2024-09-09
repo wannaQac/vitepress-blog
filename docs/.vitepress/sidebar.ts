@@ -95,7 +95,8 @@ const basic = [
         text: '基础建设',
         items: [
             { text: '引言', link: '/code/basic/' },
-            { text: 'Nvm', link: '/code/basic/nodejs' },
+            { text: 'Nvm', link: '/code/basic/nvm' },
+            { text: 'Npm', link: '/code/basic/npm' },
             { text: 'PHP', link: '/code/basic/php' },
             { text: 'Ubuntu', link: '/code/basic/ubuntu' },
             { text: 'Git', link: '/code/basic/git' },
