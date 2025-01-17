@@ -100,7 +100,14 @@ const basic = [
             { text: 'PHP', link: '/code/basic/php' },
             { text: 'Ubuntu', link: '/code/basic/ubuntu' },
             { text: 'Git', link: '/code/basic/git' },
+            { text: 'Svn', link: '/code/basic/svn' },
             { text: 'Multipass', link: '/code/basic/multipass' }
+        ]
+    },
+    {
+        text: '常用工具与配置',
+        items: [
+            { text: '常用站点（浏览器收藏）', link: '/code/basic/browser' },
         ]
     },
     {
