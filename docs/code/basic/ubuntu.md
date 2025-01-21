@@ -35,11 +35,27 @@ sudo service ssh restart
 # 查看所有端口
 sudo netstat -tuln
 # 指定某个端口
-sudo netstat -tuln | grep <端口号>
+sudo netstat -tuln | grep <port>
 
 ## 使用netstat的替代品ss，功能更强
 # 查看所有端口
 sudo ss -tuln
 # 指定某个端口
-sudo ss -tuln | grep <端口号>
+sudo ss -tuln | grep <port>
+```
+
+## 3. 命令
+### 3.1 wc
+```bash
+# 展示文件的行数、单词数和字节数
+wc <file>
+
+# 展示文件的行数
+wc -l <file>
+# 展示文件的单词数
+wc -w <file>
+# 展示文件的字节数
+wc -c <file>
+# 展示文件的字符数
+wc -m <file>
 ```
