@@ -100,3 +100,34 @@ curl -o /dev/null -s -w %{http_code} --max-time "2" --connect-timeout "2" www.ba
 * `-d` 发送POST数据体
 `curl -d 'login=emma＆password=123' -X POST https://google.com/login`
 * `-k` 跳过SSL检测，常用于访问本地启的服务，没有配置 SSL 证书
+
+### 3.3 htpasswd
+htpasswd 是一个用于创建和更新存储用户名和密码的平面文件（通常用于 HTTP 认证）的命令行工具。它通常与 Apache HTTP 服务器一起使用，用于管理基本身份验证的用户和密码。
+```bash
+# 基本用法
+htpasswd [option] <file> <account>
+
+# 常用option
+-c 创建一个新的密码文件，如果文件存在，则被覆盖
+-b 允许在命令行中直接提供密码
+-D 删除指定用户
+-v 验证用户密码
+```
+
+示例
+```bash
+# 创建一个密码文件，并添加user1账户，随后在命令行中交互输入密码
+htpasswd  -c /tmp/htpasswd user1
+
+# 创建一个密码文件，并添加user1账户，使用-b参数指定了密码，无需命令行交互
+htpasswd -b -c /tmp/htpasswd user1 password1
+
+# 创建/编辑(有则编辑，无则创建)user2用户，并在参数中指定密码
+htpasswd -b /tmp/htpasswd user2 pswd2
+
+# 删除用户user2
+htpasswd -D /tmp/htpasswd user2
+
+# 验证user2密码是否正确，并在参数中直接指定想要验证的密码
+htpasswd -b -v /tmp/htpasswd user2 pswd2
+```
