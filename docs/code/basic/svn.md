@@ -39,6 +39,7 @@ svn list <remote url> --non-interactive --username=<user> --password <password>
 ```
 
 ### 报错SSL认证不通过解决方案
+#### 方案1
 ```bash
 svn: E170013: Unable to connect to a repository at URL '<remote url>'
 svn: E230001: Server SSL certificate verification failed: certificate issued for a different hostname, issuer is not trusted
@@ -62,3 +63,21 @@ Certificate information:
 (R)eject, accept (t)emporarily or accept (p)ermanently?
 ```
 
+#### 方案2
+取消https，改用http
+![login](/code/basic/svn/proporties.jpg)
+![login](/code/basic/svn/unsethttps.jpg)
+
+## 常用命令
+
+#### svn list(svn ls)
+```bash
+# 展示详细信息，包括版本号、作者、日期、大小
+svn list -v <url>
+# 递归列出所有子目录的内容
+svn list -R <url>
+# 以xml格式输出
+svn list --xml <url>
+# 不要交互提示
+svn list --non-interactive <url>
+```
