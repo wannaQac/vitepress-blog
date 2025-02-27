@@ -96,6 +96,23 @@ curl -o /dev/null -s -w %{http_code} www.baidu.com
 curl -o /dev/null -s -w %{http_code} --max-time "2" --connect-timeout "2" www.baidu.com
 ```
 
+#### 发送请求
+参数列表
+```bash
+-X 指定用于请求的HTTP方法，如GET、POST、PUT等
+-H 设置header
+-F 设置form data，设置上传文件时要用@<filepath>，@标明是文件
+```
+```bash
+# 举个例子
+curl -X POST \
+-H "token:jl6jhkq9pg17g9ii6hlqg6segg" \
+-F "title=test1" \
+-F "product=1" \
+-F "files=@/mnt/svn_Repositories/htpasswd" \
+http://localhost:8086/api.php/v1/feedbacks
+```
+
 #### 参数列表
 * `-d` 发送POST数据体
 `curl -d 'login=emma＆password=123' -X POST https://google.com/login`
