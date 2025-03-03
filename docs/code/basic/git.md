@@ -118,3 +118,15 @@ git checkout <new_branch_name>
 git checkout master
 git merge feature
 ```
+
+## 更改remote url
+
+如果已经存在了远程url，基本逻辑就是先移除然后再添加，可以使用`-v`来检查当前的`url`
+```bash
+# 查看当前远程仓库url
+git remote -v
+# 移除当前的远程仓库url
+git remote remove origin
+# 添加新的远程仓库url
+git remote add origin
+```
