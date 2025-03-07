@@ -115,7 +115,11 @@ http://localhost:8086/api.php/v1/feedbacks
 
 #### 参数列表
 * `-d` 发送POST数据体
-`curl -d 'login=emma＆password=123' -X POST https://google.com/login`
+```bash
+curl -d 'login=emma＆password=123' -X POST https://google.com/login
+# win下只能用双引号，所以特殊部分需要转义
+curl -X POST -H "token:<token>" -d "{\"page\":1,\"pageSize\": 10}" <url>
+```
 * `-k` 跳过SSL检测，常用于访问本地启的服务，没有配置 SSL 证书
 
 ### 3.3 htpasswd

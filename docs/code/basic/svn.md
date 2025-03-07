@@ -416,8 +416,16 @@ Certificate information:
  - Fingerprint: B1:31:5D:99:17:65:4A:0F:DD:61:A9:F4:1F:9C:AB:31:25:6E:E2:22
 (R)eject, accept (t)emporarily or accept (p)ermanently?
 ```
+但这个方案只能在使用命令行的时候解决，如果是 `php exec` 则无法避免
 
 #### 方案2
+使用信任证书参数
+```bash
+svn list --trust-server-cert-failures=unknown-ca,cn-mismatch,expired,not-yet-valid,other <remote url>
+```
+可以解决 `php exec` 的报错
+
+#### 方案3
 取消https，改用http
 ![login](/code/basic/svn/proporties.jpg)
 ![login](/code/basic/svn/unsethttps.jpg)
