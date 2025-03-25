@@ -1,4 +1,5 @@
 ```php
+<?php
 $startTime = microtime(true);
 
 // 在这里写下你的程序代码

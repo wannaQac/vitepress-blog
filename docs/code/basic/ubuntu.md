@@ -134,21 +134,26 @@ htpasswd [option] <file> <account>
 -D 删除指定用户
 -v 验证用户密码
 ```
-
 示例
 ```bash
-# 创建一个密码文件，并添加user1账户，随后在命令行中交互输入密码
-htpasswd  -c /tmp/htpasswd user1
+# 创建一个密码文件，并添加user0账户，随后在命令行中交互输入密码
+htpasswd  -c /tmp/htpasswd user0
 
-# 创建一个密码文件，并添加user1账户，使用-b参数指定了密码，无需命令行交互
-htpasswd -b -c /tmp/htpasswd user1 password1
+# 创建一个密码文件，并添加user0账户，使用-b参数指定了密码，无需命令行交互
+htpasswd -b -c /tmp/htpasswd user0 password1
 
-# 创建/编辑(有则编辑，无则创建)user2用户，并在参数中指定密码
-htpasswd -b /tmp/htpasswd user2 pswd2
+# 创建/编辑(有则编辑，无则创建)user1用户，并在参数中指定密码
+htpasswd -b /tmp/htpasswd user1 pswd2
 
-# 删除用户user2
-htpasswd -D /tmp/htpasswd user2
+# 删除用户user1
+htpasswd -D /tmp/htpasswd user1
 
-# 验证user2密码是否正确，并在参数中直接指定想要验证的密码
-htpasswd -b -v /tmp/htpasswd user2 pswd2
+# 验证user1密码是否正确，并在参数中直接指定想要验证的密码
+htpasswd -b -v /tmp/htpasswd user1 pswd2
+```
+### 3.4 ncdu
+磁盘使用情况分析工具，使用 `sudo apt install ncdu` 安装依赖包
+```bash
+# 直接用就行，会扫描完成后按照从大到小列出磁盘使用情况
+ncdu
 ```

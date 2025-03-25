@@ -52,6 +52,13 @@ const php = [
         ]
     },
     {
+        text: 'LDAP',
+        items: [
+            { text: 'LDAP介绍', link: '/code/lang/php/ldap' },
+            { text: 'LDAP连接客户端认证', link: '/code/lang/php/ldaplogin' }
+        ]
+    },
+    {
         text: '遇到的问题',
         items: [
             { text: 'Form表单项过多无法处理', link: '/code/lang/php/formitemtomuch' },
