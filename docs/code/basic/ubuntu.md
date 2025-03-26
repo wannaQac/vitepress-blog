@@ -157,3 +157,13 @@ htpasswd -b -v /tmp/htpasswd user1 pswd2
 # 直接用就行，会扫描完成后按照从大到小列出磁盘使用情况
 ncdu
 ```
+
+## 系统
+
+### 4.1 fstab
+/etc/fstab 文件是 Linux 系统中用于定义和管理文件系统的挂载信息的配置文件。它的作用是告诉系统在启动时，应该如何自动挂载各种文件系统。挂载是 Linux 操作系统中一种将存储设备与目录树关联的操作。通过挂载，存储设备中的文件可以通过目录访问。
+
+```bash
+# 比如将windows中的一个共享文件夹挂载到linux下，username和password为windows本地账户信息，windows貌似必须用本地账户才可以
+//10.0.0.167/SvnRepositories /mnt/svn_Repositories cifs username=songchenxuan,password=Zentao123,uid=33,gid=33,rw 0 0
+```
