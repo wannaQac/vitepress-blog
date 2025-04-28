@@ -19,6 +19,10 @@ const code = [
         link: '/code/lang/php/'
     },
     {
+        text: 'Python',
+        link: '/code/lang/python'
+    },
+    {
         text: '数据库',
         link: '/code/database/'
     }

@@ -81,6 +81,27 @@ const js = [
     }
 ];
 
+const python = [
+    {
+        items: [
+            { text: '引言', link: '/code/lang/python/' },
+            {
+                text: '环境搭建',
+                items: [
+                    { text: 'Ubuntu', link: '/code/lang/python/ubuntu' },
+                ]
+            },
+            {
+                text: '图像识别',
+                items: [
+                    { text: '图像转文字', link: '/code/lang/python/jpgtotext' },
+                ]
+            },
+        ],
+        
+    },
+]
+
 const database = [
     {
         items: [
@@ -137,6 +158,7 @@ export const sidebar = {
     '/code/vue3/': vue3,
     '/code/lang/php/': php,
     '/code/lang/js/': js,
+    '/code/lang/python/': python,
     '/code/database/': database,
     '/code/basic/': basic
 };
