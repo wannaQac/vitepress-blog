@@ -26,6 +26,7 @@ const vue3 = [
             { text: 'Vite Init', link: '/code/vue3/vite' },
             { text: 'Vue3 Init', link: '/code/vue3/vue3init' },
             { text: 'Vscode Setting', link: '/code/vue3/vscodeplug' },
+            { text: 'Chrome Setting', link: '/code/vue3/chrome' }
         ]
     },
     {
@@ -34,7 +35,10 @@ const vue3 = [
             { text: '模版语法', link: '/code/vue3/template' },
             { text: 'Vue 内置指令', link: '/code/vue3/buildinfunction' },
             { text: '虚拟 Dom', link: '/code/vue3/virtualdom' },
-            { text: 'Diff 算法', link: '/code/vue3/diffalgorithm' }
+            { text: 'Diff 算法', link: '/code/vue3/diffalgorithm' },
+            { text: 'Ref', link: '/code/vue3/ref' },
+            { text: 'toRef', link: '/code/vue3/toref' },
+            { text: 'computed 计算属性', link: '/code/vue3/computed' }
         ]
     },
 ];
