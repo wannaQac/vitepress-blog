@@ -38,9 +38,17 @@ const vue3 = [
             { text: 'Diff 算法', link: '/code/vue3/diffalgorithm' },
             { text: 'Ref', link: '/code/vue3/ref' },
             { text: 'toRef', link: '/code/vue3/toref' },
-            { text: 'computed 计算属性', link: '/code/vue3/computed' }
+            { text: 'computed 计算属性', link: '/code/vue3/computed' },
+            { text: 'watch 监听器', link: '/code/vue3/watch' },
+            { text: 'watcheffect 高级监听器', link: '/code/vue3/watcheffect' }
         ]
     },
+    {
+        text: 'Vue3 组件',
+        items: [
+            { text: '组件介绍', link: '/code/vue3/component' }
+        ]
+    }
 ];
 
 const php = [
