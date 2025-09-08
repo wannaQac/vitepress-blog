@@ -34,6 +34,7 @@ import A from './components/A.vue'
 
 从创建到改变到销毁，创建也分为即将创建和创建成功后，更新分为即将更新和更新后，我们可以观察到dom元素的是否改变来区分。
 `App.vue`
+
 ```vue
 <template>
   <A v-if="flag"></A>

@@ -58,6 +58,12 @@ const php = [
         ],
     },
     {
+        text: '常见面试题',
+        items: [
+            { text: '基础', link: '/code/lang/php/jichu' },
+        ]
+    },
+    {
         text: '时间',
         items: [
             { text: '计算运行时间', link: '/code/lang/php/calcruntime' },
