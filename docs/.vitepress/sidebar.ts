@@ -127,6 +127,12 @@ const database = [
         ],
     },
     {
+        text: 'MySQL',
+        items: [
+            { text: '常见面试基础', link: '/code/database/mysqljichu' }
+        ]
+    },
+    {
         text: 'DuckDB',
         items: [
             { text: 'DuckDB配置', link: '/code/database/duckdb' },
