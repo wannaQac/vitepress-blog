@@ -80,3 +80,22 @@ sudo service nginx restart
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 ```
+
+有的 `composer.json` 或许还要求你安装一些其他的扩展，不能直接使用 `composer install` 就装好，如：
+```bash
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Root composer.json requires stil/gd-text ^1.1 -> satisfiable by stil/gd-text[v1.1.0].
+    - stil/gd-text v1.1.0 requires ext-gd * -> it is missing from your system. Install or enable PHP's gd extension.
+  Problem 2
+    - Root composer.json requires topthink/think-image ^1.0 -> satisfiable by topthink/think-image[v1.0.0, ..., v1.0.8].
+    - topthink/think-image[v1.0.0, ..., v1.0.8] require ext-gd * -> it is missing from your system. Install or enable PHP's gd extension.
+  Problem 3
+    - Root composer.json requires phpoffice/phpspreadsheet ^1.6 -> satisfiable by phpoffice/phpspreadsheet[1.6.0, ..., 1.30.0].
+    - phpoffice/phpspreadsheet[1.6.0, ..., 1.30.0] require ext-gd * -> it is missing from your system. Install or enable PHP's gd extension.
+```
+
+这要求安装 `php gd` 扩展，安装后，去 `fpm` 的 `php.ini` 里开启扩展，并重启 `fpm`
+```
+sudo apt-get install php7.4-gd
