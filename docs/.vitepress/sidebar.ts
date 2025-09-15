@@ -150,7 +150,9 @@ const basic = [
             { text: 'Nvm', link: '/code/basic/nvm' },
             { text: 'Npm', link: '/code/basic/npm' },
             { text: 'PHP', link: '/code/basic/php' },
+            { text: 'Nginx', link: '/code/basic/nginx' },
             { text: 'Ubuntu', link: '/code/basic/ubuntu' },
+            { text: 'WSL2', link: '/code/basic/wsl2' },
             { text: 'Git', link: '/code/basic/git' },
             { text: 'Svn', link: '/code/basic/svn' },
             { text: 'Multipass', link: '/code/basic/multipass' }

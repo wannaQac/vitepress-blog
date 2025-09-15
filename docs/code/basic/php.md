@@ -73,3 +73,10 @@ sudo service apache2 restart
 
 sudo service nginx restart
 ```
+
+## 3. Composer
+在 `Linux` 或者 `Mac OS` 上安装
+```bash
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+```
