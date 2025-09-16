@@ -107,6 +107,15 @@ const python = [
                 text: '环境搭建',
                 items: [
                     { text: 'Ubuntu', link: '/code/lang/python/ubuntu' },
+                    { text: 'Windows', link: '/code/lang/python/windows' },
+                ]
+            },
+            {
+                text: '常见问题',
+                items: [
+                    { text: '下载换源', link: '/code/lang/python/huanyuan' },
+                    { text: 'Tensorflow报错', link: '/code/lang/python/tensorflow' },
+                    { text: 'Cario-2缺失', link: '/code/lang/python/cario2' }
                 ]
             },
             {
@@ -155,7 +164,8 @@ const basic = [
             { text: 'WSL2', link: '/code/basic/wsl2' },
             { text: 'Git', link: '/code/basic/git' },
             { text: 'Svn', link: '/code/basic/svn' },
-            { text: 'Multipass', link: '/code/basic/multipass' }
+            { text: 'Multipass', link: '/code/basic/multipass' },
+            { text: 'Docker', link: '/code/basic/docker'}
         ]
     },
     {
