@@ -108,6 +108,7 @@ const python = [
                 items: [
                     { text: 'Ubuntu', link: '/code/lang/python/ubuntu' },
                     { text: 'Windows', link: '/code/lang/python/windows' },
+                    { text: 'Conda', link: '/code/lang/python/conda'}
                 ]
             },
             {
