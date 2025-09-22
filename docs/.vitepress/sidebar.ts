@@ -112,6 +112,12 @@ const python = [
                 ]
             },
             {
+                text: '显卡',
+                items: [
+                    { text: '监看显卡面板', link: '/code/lang/python/watchsmi' },
+                ]
+            },
+            {
                 text: '常见问题',
                 items: [
                     { text: '下载换源', link: '/code/lang/python/huanyuan' },
@@ -166,7 +172,8 @@ const basic = [
             { text: 'Git', link: '/code/basic/git' },
             { text: 'Svn', link: '/code/basic/svn' },
             { text: 'Multipass', link: '/code/basic/multipass' },
-            { text: 'Docker', link: '/code/basic/docker'}
+            { text: 'Docker', link: '/code/basic/docker'},
+            { text: 'SFTP', link: '/code/basic/sftp'}
         ]
     },
     {
