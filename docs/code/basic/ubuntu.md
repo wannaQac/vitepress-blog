@@ -158,6 +158,18 @@ htpasswd -b -v /tmp/htpasswd user1 pswd2
 ncdu
 ```
 
+### 3.5 nohup后台运行
+使用nohup(no hang up)命令可以让进行忽略挂起信号，即使关闭终端也不会结束。
+```bash 
+nohup your-command > output.log 2>&1 &
+```
+* your-command 要运行的命令
+* \> output.log 将标准输出写入 output.log
+* 2>&1 表示将标准错误也重定向到标准输出写入
+* & 表示在后台运行
+
+后续可以使用 `ps aux | grep "your-command"` 来搜索在后台运行进程的PID号，如果不想要了就kill掉
+
 ## 系统
 
 ### 4.1 fstab
