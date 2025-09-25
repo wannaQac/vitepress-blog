@@ -121,6 +121,13 @@ const python = [
                 ]
             },
             {
+                text: '语法和教程',
+                items: [
+                    { text: '列表', link: '/code/lang/python/list' },
+                    { text: '函数', link: '/code/lang/python/function' }
+                ]
+            },
+            {
                 text: '大模型',
                 items: [
                     { text: '模型站点', link: '/code/lang/python/modelguanwang' },
@@ -143,9 +150,10 @@ const python = [
                 ]
             },
             {
-                text: '图像识别',
+                text: '应用',
                 items: [
                     { text: '图像转文字', link: '/code/lang/python/jpgtotext' },
+                    { text: 'Emoji识别', link: '/code/lang/python/emoji' },
                 ]
             },
         ],
