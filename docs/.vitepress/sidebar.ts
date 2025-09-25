@@ -15,6 +15,15 @@ const thinkphp = [
         items: [
             { text: '安装', link: '/code/thinkphp/install' },
         ]
+    },
+    {
+        text: '数据库',
+        items: [
+            { text: '小tips', link: '/code/thinkphp/dbtips' },
+            { text: '查询数据', link: '/code/thinkphp/query' },
+            { text: '添加数据', link: '/code/thinkphp/insert' },
+            { text: '分页', link: '/code/thinkphp/paginate' },
+        ]
     }
 ];
 
@@ -109,6 +118,14 @@ const python = [
                     { text: 'Ubuntu', link: '/code/lang/python/ubuntu' },
                     { text: 'Windows', link: '/code/lang/python/windows' },
                     { text: 'Conda', link: '/code/lang/python/conda'}
+                ]
+            },
+            {
+                text: '大模型',
+                items: [
+                    { text: '模型站点', link: '/code/lang/python/modelguanwang' },
+                    { text: 'FLUX.1-Kontext', link: '/code/lang/python/kontext' },
+                    { text: 'stable-diffusion-x4-upscale', link: '/code/lang/python/stable-diffusion-x4-upscale' },
                 ]
             },
             {
