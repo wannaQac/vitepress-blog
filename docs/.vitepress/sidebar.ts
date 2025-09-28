@@ -154,6 +154,7 @@ const python = [
                 items: [
                     { text: '图像转文字', link: '/code/lang/python/jpgtotext' },
                     { text: 'Emoji识别', link: '/code/lang/python/emoji' },
+                    { text: 'Emoji打印', link: '/code/lang/python/printemoji' },
                 ]
             },
         ],

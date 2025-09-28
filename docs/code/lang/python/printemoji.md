@@ -1,0 +1,48 @@
+# 打印Emoji
+
+### 一个简单的Python程序来打印Emoji。
+
+```python
+from PIL import Image, ImageDraw, ImageFont
+
+# 创建空白图像（白色背景）
+image = Image.new("RGB", (300, 200), "white")
+draw = ImageDraw.Draw(image)
+
+# 加载seguiemj字体（替换为实际路径）
+font_path = "./seguiemj.ttf"
+font_size = 70  # 定义字体大小（支持任意正整数）
+emoji_font = ImageFont.truetype(font_path, size=font_size)
+
+# 指定embedding color为True来使用字体嵌入的彩色字形
+emojitext = "👍"  # 替换为目标emoji
+draw.text((30, 30), emojitext, font=emoji_font, fill=None, embedded_color=True)
+
+# 保存图像
+image.save("emoji_output.png")
+# 显示图像
+image.show()
+```
+
+### 现在可以使用的emoji字体ttf
+
+#### 微软官方的Segoe UI Symbol字体
+微软开发，商用需要授权的字体。[官网](https://learn.microsoft.com/en-us/typography/font-list/segoe-ui-emoji)，对 `windows` 支持的很好，网上下的往往是较老的版本，直接去 `windows` 以下路径找就行
+```
+C:\Windows\Fonts\ 
+搜索 Segoe UI Emoji，名字可能是 Segoe UI Emoji 常规，点开之后只要字体名称对即可
+```
+![emoji](/lang/python/segoe_emoji.jpg)
+
+#### Google的Noto Color
+谷歌开发并开源的字体。[github](https://github.com/googlefonts/noto-emoji)
+直接去 `font` 目录下载对应的字体就行，该链接的字体是有色的，需要注意的是，字号大小是109，不支持别的字号。如果能接受纯色，可以去找这个字体对应的纯色，貌似支持可变字体
+```
+NotoColorEmoji.ttf 仅支持字号为109，是位图不支持别的字号
+Noto-COLRv1.ttf 目前用ImageFont.truetype加载不出来
+```
+
+#### twemoji
+> Twitter Color Emoji SVGinOT Font
+
+推特的字体。[github](https://github.com/13rac1/twemoji-color-font)，可以打印并支持可变字体，不过貌似无法使用彩色，只能单色
