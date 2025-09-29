@@ -24,6 +24,32 @@ image.save("emoji_output.png")
 image.show()
 ```
 
+### 使用regex正确分割emoji
+`regex` 库可以用来正确分割 `Emoji`，正确处理基础 `Emoji`（如😊）和组合 `Emoji`（如👍🏻），避免打印错误
+```python
+# 一个示例，不使用regex库处理直接迭代数组，部分emoji会被分割错误，识别为多个emoji。
+import emoji
+import regex
+
+str = ':thumbs_up_light_skin_tone::victory_hand::pensive_face::smiling_face_with_smiling_eyes::unamused_face::rolling_on_the_floor_laughing:'
+print(str)
+print(emoji.emojize(str))
+
+for index,value in enumerate(emoji.emojize(str)):
+    print(value, emoji.demojize(value))
+
+for match in regex.finditer(r'\X', emoji.emojize(str)):
+    char = match.group()
+    print(char, emoji.demojize(char))
+```
+可以定义一个专门处理的函数，在进行字符串遍历打印时，调用一下
+```
+def safe_string_iter(text):
+    return regex.findall(r'\X', text)
+
+for num, element in enumerate(safe_string_iter(t)):
+    # 代码
+```
 ### 现在可以使用的emoji字体ttf
 
 #### 微软官方的Segoe UI Symbol字体

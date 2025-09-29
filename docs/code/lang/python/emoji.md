@@ -14,7 +14,18 @@ def is_emoji(s):
 # 测试
 print(is_emoji('😊'))   # True
 print(is_emoji('❤️'))   # True
-print(is_emoji('❤'))    # False
+print(is_emoji('❤'))    # True
 print(is_emoji('👍'))   # True
 print(is_emoji('A'))    # False
+```
+
+### 判断一个字符串是否包含emoji
+```python
+import emoji
+def contains_emoji(text):
+    emojis = emoji.emoji_list(text)
+    return len(emojis) > 0
+
+print(contains_emoji('Hello, world! 😊')) # True
+print(contains_emoji('Hello, world!')) # False 
 ```
