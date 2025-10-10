@@ -6,6 +6,10 @@ const framework = [
     {
         text: 'ThinkPHP',
         link: '/code/thinkphp/install'
+    },
+    {
+        text: 'Flask',
+        link: '/code/flask/install'
     }
 ];
 

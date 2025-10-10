@@ -27,6 +27,15 @@ const thinkphp = [
     }
 ];
 
+const flask = [
+    {
+        text: '介绍',
+        items: [
+            { text: '安装', link: '/code/flask/install' },
+        ]
+    }
+];
+
 const vue3 = [
     {
         text: 'Vue3 开始',
@@ -133,6 +142,7 @@ const python = [
                     { text: '模型站点', link: '/code/lang/python/modelguanwang' },
                     { text: 'FLUX.1-Kontext', link: '/code/lang/python/kontext' },
                     { text: 'stable-diffusion-x4-upscale', link: '/code/lang/python/stable-diffusion-x4-upscale' },
+                    { text: 'Wan2.2-I2V-A14B-Diffusers', link: '/code/lang/python/wan2.2-i2v-a14b-diffusers' }
                 ]
             },
             {
@@ -146,7 +156,9 @@ const python = [
                 items: [
                     { text: '下载换源', link: '/code/lang/python/huanyuan' },
                     { text: 'Tensorflow报错', link: '/code/lang/python/tensorflow' },
-                    { text: 'Cario-2缺失', link: '/code/lang/python/cario2' }
+                    { text: 'Cario-2缺失', link: '/code/lang/python/cario2' },
+                    { text: 'flash-attn安装避坑', link: '/code/lang/python/flash-attn' },
+                    { text: 'clipTextModel未定义参数', link: '/code/lang/python/cliptextmodel' }
                 ]
             },
             {
@@ -155,6 +167,7 @@ const python = [
                     { text: '图像转文字', link: '/code/lang/python/jpgtotext' },
                     { text: 'Emoji识别', link: '/code/lang/python/emoji' },
                     { text: 'Emoji打印', link: '/code/lang/python/printemoji' },
+                    { text: 'PNG图片压缩', link: '/code/lang/python/pngyasuo' }
                 ]
             },
         ],
@@ -225,6 +238,7 @@ const basic = [
 export const sidebar = {
     '/code/datastruct/': datastruct,
     '/code/thinkphp/': thinkphp,
+    '/code/flask/': flask,
     '/code/vue3/': vue3,
     '/code/lang/php/': php,
     '/code/lang/js/': js,

@@ -1,0 +1,1 @@
+# Wan2.2-I2V-A14B-Diffusers

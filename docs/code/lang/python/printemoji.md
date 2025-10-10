@@ -43,9 +43,25 @@ for match in regex.finditer(r'\X', emoji.emojize(str)):
     print(char, emoji.demojize(char))
 ```
 可以定义一个专门处理的函数，在进行字符串遍历打印时，调用一下
-```
+```python
+import emoji
+import regex
+def is_emoji(char):
+    return char in emoji.EMOJI_DATA
+
+# 简单版本
 def safe_string_iter(text):
     return regex.findall(r'\X', text)
+
+# 增强版本，只对emoji保留原始长度，非emoji拆分为单字符，应用场景中发生了藏文也被保留长度的情况
+def safe_string_iter_strong(text):
+    chars = []
+    for char in regex.findall(r'\X', text):
+        if is_emoji(char):
+            chars.append(char)  # Emoji保留原始长度
+        else:
+            chars.extend(list(char))  # 非Emoji拆分为单字符
+    return chars
 
 for num, element in enumerate(safe_string_iter(t)):
     # 代码
@@ -72,3 +88,4 @@ Noto-COLRv1.ttf 目前用ImageFont.truetype加载不出来
 > Twitter Color Emoji SVGinOT Font
 
 推特的字体。[github](https://github.com/13rac1/twemoji-color-font)，可以打印并支持可变字体，不过貌似无法使用彩色，只能单色
+
