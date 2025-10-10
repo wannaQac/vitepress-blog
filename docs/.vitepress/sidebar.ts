@@ -188,6 +188,12 @@ const database = [
         ]
     },
     {
+        text: 'Sqlite3',
+        items: [
+            { text: '数据类型', link: '/code/database/sqlitedatatype' }
+        ]
+    },
+    {
         text: 'DuckDB',
         items: [
             { text: 'DuckDB配置', link: '/code/database/duckdb' },
@@ -206,6 +212,7 @@ const basic = [
             { text: 'Npm', link: '/code/basic/npm' },
             { text: 'PHP', link: '/code/basic/php' },
             { text: 'Nginx', link: '/code/basic/nginx' },
+            { text: 'Windows', link: '/code/basic/windows' },
             { text: 'Ubuntu', link: '/code/basic/ubuntu' },
             { text: 'WSL2', link: '/code/basic/wsl2' },
             { text: 'Git', link: '/code/basic/git' },

@@ -14,3 +14,7 @@ pip install <包名> -i <源>
 ```bash
 pip config set global.index-url <源>
 ```
+
+```bash
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
+```
