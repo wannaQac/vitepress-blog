@@ -158,7 +158,8 @@ const python = [
                     { text: 'Tensorflow报错', link: '/code/lang/python/tensorflow' },
                     { text: 'Cario-2缺失', link: '/code/lang/python/cario2' },
                     { text: 'flash-attn安装避坑', link: '/code/lang/python/flash-attn' },
-                    { text: 'clipTextModel未定义参数', link: '/code/lang/python/cliptextmodel' }
+                    { text: 'clipTextModel未定义参数', link: '/code/lang/python/cliptextmodel' },
+                    { text: 'torchvision模块引入错误', link: '/code/lang/python/basicsrtensor' }
                 ]
             },
             {
@@ -168,7 +169,9 @@ const python = [
                     { text: 'Emoji识别', link: '/code/lang/python/emoji' },
                     { text: 'Emoji打印', link: '/code/lang/python/printemoji' },
                     { text: 'PNG图片压缩', link: '/code/lang/python/pngyasuo' },
-                    { text: '图片分辨率缩放', link: '/code/lang/python/imageresize' }
+                    { text: '图片分辨率缩放', link: '/code/lang/python/imageresize' },
+                    { text: '图片画质修复', link: '/code/lang/python/imagexiufu' },
+                    { text: '视频画质修复', link: '/code/lang/python/videoxiufu' }
                 ]
             },
         ],
