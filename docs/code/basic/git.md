@@ -130,3 +130,7 @@ git remote remove origin
 # 添加新的远程仓库url
 git remote add origin
 ```
+
+## 项目本地忽略文件（夹）
+
+编辑 `.git/info/exclude` 文件，添加需要忽略的文件（夹），规则是专属于自己的本地仓库，完全静默，不会被提交或影响他人
