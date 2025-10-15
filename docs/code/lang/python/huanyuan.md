@@ -8,6 +8,10 @@
 ```bash
 pip install <包名> -i <源>
 ```
+部分的包可以通过指定具体的路径来加速
+```bash
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
+```
 
 #### 永久更改
 
@@ -17,4 +21,7 @@ pip config set global.index-url <源>
 
 ```bash
 pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
+```
+```bash
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
