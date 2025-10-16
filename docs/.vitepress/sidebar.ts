@@ -140,6 +140,7 @@ const python = [
                 text: '大模型',
                 items: [
                     { text: '模型站点', link: '/code/lang/python/modelguanwang' },
+                    { text: 'AI画图提示词', link: '/code/lang/python/aiprompt' },
                     { text: 'FLUX.1-Kontext', link: '/code/lang/python/kontext' },
                     { text: 'stable-diffusion-x4-upscale', link: '/code/lang/python/stable-diffusion-x4-upscale' },
                     { text: 'Wan2.2-I2V-A14B-Diffusers', link: '/code/lang/python/wan2.2-i2v-a14b-diffusers' }
