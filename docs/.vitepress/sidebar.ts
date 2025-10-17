@@ -99,6 +99,8 @@ const php = [
         items: [
             { text: 'Form表单项过多无法处理', link: '/code/lang/php/formitemtomuch' },
             { text: '上传文件大小限制', link: '/code/lang/php/uploadfilelimit' },
+            { text: 'exec不阻塞进程', link: '/code/lang/php/execnoblock' },
+            { text: '下载大文件', link: '/code/lang/php/downloadbigfile' },
         ]
     }
 ];
