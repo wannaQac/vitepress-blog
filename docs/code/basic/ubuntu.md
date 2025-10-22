@@ -29,6 +29,11 @@ PermitRootLogin yes
 sudo service ssh restart
 ```
 
+### 1.4 链接 ssh 服务
+```bash
+ssh -p <port> <username>@<ip>
+```
+
 ## 2. 端口
 ### 2.1 查询端口占用
 ```bash
@@ -170,6 +175,12 @@ nohup your-command > output.log 2>&1 &
 
 后续可以使用 `ps aux | grep "your-command"` 来搜索在后台运行进程的PID号，如果不想要了就kill掉
 
+### 3.6 passwd
+passwd 命令用于修改用户密码。
+```bash
+passwd
+```
+
 ## 系统
 
 ### 4.1 fstab
@@ -179,3 +190,35 @@ nohup your-command > output.log 2>&1 &
 # 比如将windows中的一个共享文件夹挂载到linux下，username和password为windows本地账户信息，windows貌似必须用本地账户才可以
 //10.0.0.167/SvnRepositories /mnt/svn_Repositories cifs username=songchenxuan,password=Zentao123,uid=33,gid=33,rw 0 0
 ```
+
+### 4.2 netplan网络设置
+在 `etc/netplan` 中创建配置文件，比如 `50-cloud-init.yaml`，如果 `ubuntu` 是联网安装的默认应该就有，如果没有，可以手动创建。
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp142s0:
+      dhcp4: no
+      addresses: [192.168.12.33/24]
+      routes:
+        - to: default
+          via: 192.168.12.1
+      nameservers:
+        addresses: [8.8.8.8, 114.114.114.114]
+```
+
+### 4.3 设置服务开机自启
+开机自启
+```bash
+sudo systemctl enable <service>
+```
+开机不自启
+```bash
+sudo systemctl disable <service>
+```
+查看服务状态
+```bash
+sudo systemctl status <service>
+```
+
