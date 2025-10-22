@@ -129,7 +129,7 @@ const python = [
                     { text: 'Ubuntu', link: '/code/lang/python/ubuntu' },
                     { text: 'Windows', link: '/code/lang/python/windows' },
                     { text: 'Conda', link: '/code/lang/python/conda'}, 
-                    { text: 'N卡驱动和CUDA', link: '/code/lang/python/cuda'}
+                    { text: 'N卡驱动和CUDA', link: '/code/lang/python/cuda'},
                 ]
             },
             {
