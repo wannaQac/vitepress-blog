@@ -222,3 +222,50 @@ sudo systemctl disable <service>
 sudo systemctl status <service>
 ```
 
+### 4.4 硬盘扩容
+#### 查看分区与挂载
+```bash
+df -h
+```
+一般返回如下：`/dev/mapper/` 开头的一般就是自己的盘
+```bash
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                               13G   15M   13G   1% /run
+efivarfs                           128K   89K   35K  72% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv  295G   94G  189G  34% /
+tmpfs                               63G     0   63G   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p2                     2.0G  103M  1.7G   6% /boot
+/dev/nvme0n1p1                     1.1G  6.2M  1.1G   1% /boot/efi
+tmpfs                               13G   20K   13G   1% /run/user/1000
+```
+还可以用 `lsblk` 命令查看分区情况
+```bash
+lsblk
+```
+```bash
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+nvme0n1                   259:0    0 931.5G  0 disk 
+├─nvme0n1p1               259:1    0     1G  0 part /boot/efi
+├─nvme0n1p2               259:2    0     2G  0 part /boot
+└─nvme0n1p3               259:3    0 928.5G  0 part 
+  └─ubuntu--vg-ubuntu--lv 252:0    0   300G  0 lvm  /
+```
+可见我们系统在 `nvme0n1p3` 这个分区上。
+#### 扩容
+使用 `lsblk -f` 查看分区类型，如果是 `ext4` 格式的，可以用 `resize2fs` 命令进行扩容。
+```bash
+NAME                      FSTYPE      FSVER    LABEL UUID                                   FSAVAIL FSUSE% MOUNTPOINTS
+nvme0n1                                                                                                    
+├─nvme0n1p1               vfat        FAT32          2E68-B64B                                   1G     1% /boot/efi
+├─nvme0n1p2               ext4        1.0            c515f5bc-df8f-4e86-9273-a7899fd67160      1.7G     5% /boot
+└─nvme0n1p3               LVM2_member LVM2 001       plooly-Nchf-p24n-8Z3v-6oK0-AIh0-YemFdA                
+  └─ubuntu--vg-ubuntu--lv ext4        1.0            3e30d937-799b-4bf2-a677-cd9064823be8    188.3G    32% /
+```
+
+```bash
+# 扩展逻辑卷到目标大小
+lvextend -L 300G /dev/ubuntu-vg/ubuntu-lv
+# 扩展文件系统
+resize2fs /dev/ubuntu-vg/ubuntu-lv
+```
