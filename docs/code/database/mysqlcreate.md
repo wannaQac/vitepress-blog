@@ -1,0 +1,2 @@
+# 数据定义语言 DDL
+> CREATE ALTER DROP

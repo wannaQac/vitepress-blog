@@ -192,6 +192,12 @@ const database = [
     {
         text: 'MySQL',
         items: [
+            { text: '数据定义DDL', link: '/code/database/mysqlcreate' },
+            { text: '数据查询DQL', link: '/code/database/mysqlselect' },
+            { text: '数据操作DML', link: '/code/database/mysqlinsert' },
+            { text: '事务控制TCP', link: '/code/database/mysqltransaction' },
+            { text: '指针控制CCL', link: '/code/database/mysqlpointer' },
+            { text: '函数', link: '/code/database/mysqlfunction' },
             { text: '常见面试基础', link: '/code/database/mysqljichu' }
         ]
     },
