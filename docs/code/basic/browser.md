@@ -18,6 +18,8 @@
 * AI快捷指令（关键词）[链接](https://www.aishort.top/) 教会你如何与GPT高效对话
 
 ### 1.4 科学上网
+* 雨燕云 [链接](https://xn--9kqq37frnz.com/)
+* 六神云 [链接](https://sixgod.info/auth/login)
 
 ## 2. Code日常
 ### 2.1 代码托管平台
@@ -50,3 +52,9 @@
 ## 4. 大杂烩
 ### 4.1 小工具网站
 * Logo生成 [链接](https://emblemmatic.org/) 只需要键入文本即可
+
+## 5. 服务器租赁
+### 5.1 GPU服务器租赁
+* 并行智算云 [链接](https://ai.paratera.com/)
+* 潞晨云 [链接](https://cloud.luchentech.com/account/signin)
+* AutoDL算力云 [链接](https://www.autodl.com/login)
