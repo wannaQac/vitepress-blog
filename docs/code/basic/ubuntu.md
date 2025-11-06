@@ -269,3 +269,23 @@ lvextend -L 300G /dev/ubuntu-vg/ubuntu-lv
 # 扩展文件系统
 resize2fs /dev/ubuntu-vg/ubuntu-lv
 ```
+
+### 4.5 虚拟内存扩容（swap）
+> 内存不够用时的一种方案，或者下策
+
+临时增加虚拟内存
+```bash
+# 例：新增 8GB（两种创建方式二选一）
+sudo fallocate -l 8G /swapfile
+# 若 fallocate 失败（部分文件系统不支持），改用 dd
+# sudo dd if=/dev/zero of=/swapfile bs=1G count=8
+
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
+永久扩容（重启后仍生效）
+```bash
+# 将新 swapfile 写入 /etc/fstab（若已有旧行，先注释或删除旧条目）
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```

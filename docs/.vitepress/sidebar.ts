@@ -240,6 +240,8 @@ const basic = [
         text: '常用工具与配置',
         items: [
             { text: '常用站点（浏览器收藏）', link: '/code/basic/browser' },
+            { text: 'SQLMap', link: '/code/basic/sqlmap' },
+            { text: 'Ngrok', link: '/code/basic/ngrok' },
         ]
     },
     {
