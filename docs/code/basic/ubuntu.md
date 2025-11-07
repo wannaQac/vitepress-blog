@@ -289,3 +289,12 @@ sudo swapon /swapfile
 # 将新 swapfile 写入 /etc/fstab（若已有旧行，先注释或删除旧条目）
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
+重新扩容
+```bash
+# 查看使用情况
+swapon --show
+# 关闭现在在用的交换内存文件
+sudo swapoff /swapfile
+# 删了重新建
+sudo rm /swapfile
+```
