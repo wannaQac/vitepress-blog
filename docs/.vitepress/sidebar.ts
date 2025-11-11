@@ -169,13 +169,15 @@ const python = [
             {
                 text: '应用',
                 items: [
+                    { text: '阻塞的长时任务', link: '/code/lang/python/longtask' },
                     { text: '图像转文字', link: '/code/lang/python/jpgtotext' },
                     { text: 'Emoji识别', link: '/code/lang/python/emoji' },
                     { text: 'Emoji打印', link: '/code/lang/python/printemoji' },
                     { text: 'PNG图片压缩', link: '/code/lang/python/pngyasuo' },
                     { text: '图片分辨率缩放', link: '/code/lang/python/imageresize' },
                     { text: '图片画质修复', link: '/code/lang/python/imagexiufu' },
-                    { text: '视频画质修复', link: '/code/lang/python/videoxiufu' }
+                    { text: '视频画质修复', link: '/code/lang/python/videoxiufu' },
+                    { text: '抠图', link: '/code/lang/python/koutu' }
                 ]
             },
         ],
