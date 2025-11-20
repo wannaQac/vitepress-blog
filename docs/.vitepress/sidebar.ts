@@ -22,6 +22,8 @@ const thinkphp = [
             { text: '小tips', link: '/code/thinkphp/dbtips' },
             { text: '查询数据', link: '/code/thinkphp/query' },
             { text: '添加数据', link: '/code/thinkphp/insert' },
+            { text: '更新数据', link: '/code/thinkphp/update' },
+            { text: '连表', link: '/code/thinkphp/join' },
             { text: '分页', link: '/code/thinkphp/paginate' },
         ]
     }
