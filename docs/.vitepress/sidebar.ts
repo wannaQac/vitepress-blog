@@ -135,10 +135,18 @@ const python = [
                 ]
             },
             {
-                text: '语法和教程',
+                text: 'Python基础',
                 items: [
                     { text: '列表', link: '/code/lang/python/list' },
                     { text: '函数', link: '/code/lang/python/function' }
+                ]
+            },
+            {
+                text: 'Python常用的库',
+                items: [
+                    { text: 'os库', link: '/code/lang/python/ospackage' },
+                    { text: 'sys库', link: '/code/lang/python/syspackage' },
+                    { text: 'pillow库', link: '/code/lang/python/pillowpackage' }
                 ]
             },
             {
