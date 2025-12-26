@@ -80,11 +80,44 @@ sudo sh cuda_13.0.0_580.65.06_linux.run
 export PATH=/usr/local/cuda-13.0/bin:$PATH                           
 export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH
 ```
-
 ```bash
 source ~/.bashrc
 ```
-输入 `nvcc -V` 验证是否安装成功。
+### 验证CUDA安装
+在命令行中输入 `nvcc -V` 验证是否安装成功。
+
+### 切换CUDA版本
+只要在`~/.bashrc`中切换环境变量即可，不需要卸载旧版本的CUDA。可以多版本CUDA共存的
+
+
+
+### 安装过程中CUDA报错
+查看提示的log文件，根据具体的错误来解决。
+#### gcc版本过高
+cuda12.0需要的gcc版本往往是10，cuda13.0可以兼容使用gcc13安装
+
+##### 安装多版本的gcc
+```bash
+sudo apt update -y
+sudo apt install -y gcc-13 g++-13
+sudo apt install -y gcc-10 g++-10
+```
+##### 管理全局 GCC 版本（解决 gcc --version 报错）
+```bash
+# 注册 GCC 10（优先级 100，数字越小优先级越高，可自定义）
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 100
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-10 100
+
+# 注册 GCC 13（优先级 130，低于 GCC 10，默认不生效，按需添加）
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 130
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 130
+```
+##### 切换默认 GCC 版本
+```bash
+# 交互式选择默认 GCC 版本（执行后按数字回车即可）
+sudo update-alternatives --config gcc
+sudo update-alternatives --config g++
+```
 
 ## 安装cuDNN
 ### 下载cuDNN

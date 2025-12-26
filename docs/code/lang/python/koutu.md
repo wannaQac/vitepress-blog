@@ -9,6 +9,8 @@ rembg i -m u2netp path/to/input.png path/to/output.png
 ### 代码方案
 > https://huggingface.co/ZhengPeng7/BiRefNet
 
+除此之外，还有很多模型可供尝试：`ben2`, `isnet`, `unet`, `transparent-background` 等
+
 可以直接把模型下载，然后指定模型路径
 ```bash
 export HF_ENDPOINT=https://hf-mirror.com

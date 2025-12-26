@@ -11,3 +11,15 @@ pip install huggingface-hub
 export HF_ENDPOINT=https://hf-mirror.com
 hf download ff2416/kontext --local-dir ./kontext
 ```
+
+# modelscope
+[链接](https://modelscope.cn/models)，超多的模型
+
+### 从modelscope下载模型
+```bash
+pip install modelscope
+```
+具体的用法: [链接](https://www.modelscope.cn/docs/models/download)
+```bash
+modelscope download --model Qwen/Qwen-Image-Edit-2511 --local_dir Qwen-Image-Edit-2511
+```
