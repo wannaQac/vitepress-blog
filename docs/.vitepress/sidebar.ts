@@ -150,25 +150,28 @@ const python = [
                 ]
             },
             {
-                text: '大模型',
+                text: '杂七杂八的知识点',
                 items: [
+                    { text: '下载换源', link: '/code/lang/python/huanyuan' },
                     { text: '模型站点', link: '/code/lang/python/modelguanwang' },
                     { text: 'AI画图提示词', link: '/code/lang/python/aiprompt' },
-                    { text: 'FLUX.1-Kontext', link: '/code/lang/python/kontext' },
-                    { text: 'stable-diffusion-x4-upscale', link: '/code/lang/python/stable-diffusion-x4-upscale' },
-                    { text: 'Wan2.2-I2V-A14B-Diffusers', link: '/code/lang/python/wan2.2-i2v-a14b-diffusers' }
-                ]
-            },
-            {
-                text: '显卡',
-                items: [
                     { text: '监看显卡面板', link: '/code/lang/python/watchsmi' },
                 ]
             },
             {
-                text: '常见问题',
+                text: '好用的模型列表',
                 items: [
-                    { text: '下载换源', link: '/code/lang/python/huanyuan' },
+                    { text: 'FLUX.1-Kontext', link: '/code/lang/python/kontext' },
+                    { text: 'Z-Image-Turbo', link: '/code/lang/python/z-image' },
+                    { text: 'facefusion', link: '/code/lang/python/facefusion' },
+                    { text: 'PromptGen-v1.5', link: '/code/lang/python/Florence-2'},
+                    { text: 'MiniCPM-V-2_6', link: '/code/lang/python/MiniCPM-V-2_6'},
+                    { text: 'Wan2.2-I2V-A14B-Diffusers', link: '/code/lang/python/wan2.2-i2v-a14b-diffusers' }
+                ]
+            },
+            {
+                text: '一些报错',
+                items: [
                     { text: 'Tensorflow报错', link: '/code/lang/python/tensorflow' },
                     { text: 'Cario-2缺失', link: '/code/lang/python/cario2' },
                     { text: 'flash-attn安装避坑', link: '/code/lang/python/flash-attn' },
@@ -187,7 +190,8 @@ const python = [
                     { text: '图片分辨率缩放', link: '/code/lang/python/imageresize' },
                     { text: '图片画质修复', link: '/code/lang/python/imagexiufu' },
                     { text: '视频画质修复', link: '/code/lang/python/videoxiufu' },
-                    { text: '抠图', link: '/code/lang/python/koutu' }
+                    { text: '抠图', link: '/code/lang/python/koutu' },
+                    //{ text: '打印字体', link: '/code/lang/python/dayinziti' }
                 ]
             },
         ],

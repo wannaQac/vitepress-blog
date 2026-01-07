@@ -8,8 +8,9 @@ pip install emoji
 ```python
 import emoji
 
-def is_emoji(s):
-    return s in emoji.EMOJI_DATA
+def is_emoji(char):
+    return emoji.emoji_count(char) > 0
+# 存在部分emoji实际上是由两个字符构成的
 
 # 测试
 print(is_emoji('😊'))   # True
