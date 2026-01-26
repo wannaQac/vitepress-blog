@@ -27,6 +27,7 @@ print("目录 new_directory 创建成功")
 ### 创建多级目录
 ```python
 os.makedirs('parent_directory/child_directory')
+os.makedirs('parent_directory/child_directory', exist_ok=True) # 即便存在也ok
 print("多级目录 parent_directory/child_directory 创建成功")
 ```
 

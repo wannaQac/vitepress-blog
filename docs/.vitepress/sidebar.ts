@@ -137,6 +137,7 @@ const python = [
             {
                 text: 'Python基础',
                 items: [
+                    { text: '变量', link: '/code/lang/python/bianliang' },
                     { text: '列表', link: '/code/lang/python/list' },
                     { text: '函数', link: '/code/lang/python/function' }
                 ]
