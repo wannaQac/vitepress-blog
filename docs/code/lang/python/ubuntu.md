@@ -1,4 +1,4 @@
-## Ubuntu 环境搭建
+# Ubuntu 环境搭建
 
 ### 下载python
 ```bash

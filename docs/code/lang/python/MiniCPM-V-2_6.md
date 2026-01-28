@@ -1,4 +1,4 @@
-## MiniCPM-V-2_6
+# MiniCPM-V-2_6
 
 ### 安装
 

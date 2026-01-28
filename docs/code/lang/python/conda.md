@@ -1,4 +1,4 @@
-## Conda
+# Conda
 
 ### Ubuntu安装
 [Conda官网](https://www.anaconda.com/download/)，点击 `Skip registration` 进入下载页面

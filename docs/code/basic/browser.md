@@ -20,6 +20,8 @@
 ### 1.4 科学上网
 * 雨燕云 [链接](https://xn--9kqq37frnz.com/)
 * 六神云 [链接](https://sixgod.info/auth/login)
+* 极速云 [链接](https://w4.rouhe88.com/)
+* 总链接 [链接](http://www.payasyougowebs.co.uk/)
 
 ### 1.5 AI类
 #### 1.5.1 模型、训练
