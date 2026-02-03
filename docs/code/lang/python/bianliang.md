@@ -31,3 +31,20 @@ y = 3.14
 # 复数
 z = 1 + 2j
 ```
+
+#### 字符串类型
+```python
+# 单引号字符串
+s1 = 'Hello'
+
+# 双引号字符串
+s2 = "World"
+
+# 三引号字符串（多行）
+s3 = '''This is a
+multi-line string.'''
+
+# 可插入变量的字符串
+var = "Python"
+s4 = f"Hello, {var}!"
+```

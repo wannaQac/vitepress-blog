@@ -17,6 +17,12 @@ git push -u origin main
 git config --add core.filemode false
 # 保存git的用户名和密码
 git config --global credential.helper store
+
+# Windows 系统下，拉取代码自动将 LF 转为 CRLF，提交时转为 LF
+git config --global core.autocrlf true
+
+# 忽略换行符相关的文件差异（避免 Git 把换行符变化当作文件修改）
+git config --global core.safecrlf warn
 ```
 ## Github 设置 Accesstoken
 
