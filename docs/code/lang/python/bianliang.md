@@ -48,3 +48,29 @@ multi-line string.'''
 var = "Python"
 s4 = f"Hello, {var}!"
 ```
+
+#### 布尔类型
+```python
+is_valid = True
+is_done = False
+```
+
+#### 空值类型
+```python
+is_none = None
+```
+
+#### 集合类型
+```python
+# 列表
+my_list = [1, 2, 3, 4, 5]
+
+# 元组
+my_tuple = (1, 2, 3, 4, 5)
+
+# 集合
+my_set = {1, 2, 3, 4, 5}
+
+# 字典
+my_dict = {"name": "Alice", "age": 25}
+```
