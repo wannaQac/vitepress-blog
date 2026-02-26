@@ -35,8 +35,11 @@
 ![login](/code/basic/charles/13.jpg)
 或许需要安装 `ssl` 证书，手机端访问对应的链接就可以了，不过或许不安装证书也可以使用
 ![login](/code/basic/charles/10.jpg)
-如果弹出，一定选同意
 ![login](/code/basic/charles/11.jpg)
+
+#### IOS安装证书
+- 下载证书之后，打开 `设置 ->  通用 -> VPN与设备管理` ，安装该配置描述文件
+- 打开 `设置 -> 通用 -> 关于本机 -> 证书信任设置`，找到 `Charles Proxy CA` 证书，信任
 
 #### 使用过滤条件
 因为 `charles` 启动后，电脑的请求也会展现，所以如果说对某些 `app` 进行抓包，使用筛选来进行过滤
