@@ -274,6 +274,12 @@ const basic = [
         items: [
             { text: 'astro', link: '/code/basic/astro' },
         ]
+    },
+    {
+        text: 'AI工具',
+        items: [
+            { text: 'OpenClaw', link: '/code/basic/openClaw' },
+        ]
     }
 ];
 
