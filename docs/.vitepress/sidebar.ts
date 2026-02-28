@@ -246,6 +246,7 @@ const basic = [
             { text: 'Nginx', link: '/code/basic/nginx' },
             { text: 'Windows', link: '/code/basic/windows' },
             { text: 'Ubuntu', link: '/code/basic/ubuntu' },
+            { text: 'macOS', link: '/code/basic/macOS' },
             { text: 'WSL2', link: '/code/basic/wsl2' },
             { text: 'Git', link: '/code/basic/git' },
             { text: 'Svn', link: '/code/basic/svn' },
