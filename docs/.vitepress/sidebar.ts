@@ -279,7 +279,7 @@ const basic = [
     {
         text: 'AI工具',
         items: [
-            { text: 'OpenClaw', link: '/code/basic/openClaw' },
+            { text: 'OpenClaw', link: '/code/basic/openclaw' },
         ]
     }
 ];
