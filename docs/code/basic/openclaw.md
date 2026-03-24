@@ -131,6 +131,17 @@ Ask the bot owner to approve with:
 openclaw pairing approve feishu XXXXXXX
 ```
 
+### 搜索服务
+默认继承了 `Brave Search API`，可以直接配上 `API Key` 进行搜索。
+```
+openclaw configure --section web
+```
+
+### 升级
+```
+openclaw update
+```
+升级之后，如 `2026.3.2` 的版本，可能会出现定时任务没有权限访问文件的情况，这种情况可以尝试重新使用命令行配置定时任务。
 ### 卸载
 ```
 openclaw uninstall

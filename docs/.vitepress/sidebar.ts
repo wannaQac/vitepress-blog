@@ -177,7 +177,8 @@ const python = [
                     { text: 'Cario-2缺失', link: '/code/lang/python/cario2' },
                     { text: 'flash-attn安装避坑', link: '/code/lang/python/flash-attn' },
                     { text: 'clipTextModel未定义参数', link: '/code/lang/python/cliptextmodel' },
-                    { text: 'torchvision模块引入错误', link: '/code/lang/python/basicsrtensor' }
+                    { text: 'torchvision模块引入错误', link: '/code/lang/python/basicsrtensor' }, 
+                    { text: 'pip编辑安装时报错没有模块', link: '/code/lang/python/pipbianyi' },
                 ]
             },
             {
