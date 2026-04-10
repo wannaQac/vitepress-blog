@@ -35,6 +35,9 @@
 * 可灵AI [链接](https://app.klingai.com/cn/)
 * 通义万象 [链接](https://tongyi.aliyun.com/)
 * 即梦 [链接](https://jimeng.jianying.com/)
+
+#### 1.5.3 工具
+* stitch氛围UI编程 [链接](https://stitch.withgoogle.com/)
 ## 2. Code日常
 ### 2.1 代码托管平台
 * SVN [链接](https://svnbucket.com/)
