@@ -298,3 +298,50 @@ sudo swapoff /swapfile
 # 删了重新建
 sudo rm /swapfile
 ```
+
+### 4.6 ufw防火墙
+
+#### 基础内容查看
+```bash
+# 查看防火墙状态与现有规则
+sudo ufw status
+```
+
+#### 开启、关闭、重置
+
+```bash
+# 启用防火墙
+sudo ufw enable
+
+# 关闭防火墙
+sudo ufw disable
+
+# 重置所有规则（清空全部配置，回到默认）
+sudo ufw reset
+```
+
+#### 指定ip访问
+```bash
+# 仅允许 192.168.1.100 访问本机22端口
+sudo ufw allow from 192.168.1.100 to any port 22 proto tcp
+
+# 允许整个网段
+sudo ufw allow from 192.168.1.0/24 to any port 22
+
+# 拒绝某个IP
+sudo ufw deny from 10.0.0.5
+```
+#### 拒绝端口
+```bash
+# 拒绝外部访问3306端口
+sudo ufw deny 3306/tcp
+```
+
+#### 删除规则
+```bash
+# 1.先看编号
+sudo ufw status numbered
+
+# 删除编号为2的规则，输入y确认
+sudo ufw delete 2
+```
