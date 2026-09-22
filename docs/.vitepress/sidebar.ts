@@ -211,6 +211,7 @@ const database = [
     {
         text: 'MySQL',
         items: [
+            { text: 'Windows下MySQL的安装', link: '/code/database/mysqlwininstall' },
             { text: '数据定义DDL', link: '/code/database/mysqlcreate' },
             { text: '数据查询DQL', link: '/code/database/mysqlselect' },
             { text: '数据操作DML', link: '/code/database/mysqlinsert' },
